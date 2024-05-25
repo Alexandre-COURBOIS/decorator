@@ -10,8 +10,8 @@ public class FacebookDecorator extends BaseDecorator {
 
     @Override
     public void send(String message) {
-        sendFacebookMessage(message);
         super.send(message);
+        sendFacebookMessage(message);
     }
 
     private void sendFacebookMessage(String message) {

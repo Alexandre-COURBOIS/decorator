@@ -10,8 +10,8 @@ public class SlackDecorator extends BaseDecorator {
 
     @Override
     public void send(String message) {
-        sendSlackMessage(message);
         super.send(message);
+        sendSlackMessage(message);
     }
 
     private void sendSlackMessage(String message) {

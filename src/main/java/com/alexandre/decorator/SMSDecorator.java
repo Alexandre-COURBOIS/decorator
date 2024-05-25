@@ -10,8 +10,8 @@ public class SMSDecorator extends BaseDecorator {
 
     @Override
     public void send(String message) {
-        sendSMS(message);
         super.send(message);
+        sendSMS(message);
     }
 
     private void sendSMS(String message) {
